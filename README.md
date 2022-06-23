@@ -1,4 +1,7 @@
 
     # Portfolio Generator
-    ## McAmy2001
+    ## It's cool
+    ## Installation Instructions: None
+    ## Usage Instructions: None
+    
   

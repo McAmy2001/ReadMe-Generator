@@ -16,10 +16,14 @@ function renderLicenseSection(license) {}
 //
 //`;
 //}
-const generateMarkdown = (title, github) => {
+const generateMarkdown = (object) => {
+  console.log(object.license);
   return `
-    # ${title}
-    ## ${github}
+    # ${object.title}
+    ## ${object.description}
+    ## Installation Instructions: ${object.install}
+    ## Usage Instructions: ${object.usage}
+    
   `;
 };
 
