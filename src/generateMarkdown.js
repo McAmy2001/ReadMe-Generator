@@ -21,9 +21,7 @@ const generateMarkdown = (object) => {
   return `# ${object.title}
 ## ${object.description}
 ## Installation Instructions: ${object.install}
-## Usage Instructions: ${object.usage}
-    
-  `;
+## Usage Instructions: ${object.usage}`;
 };
 
 module.exports = generateMarkdown;
