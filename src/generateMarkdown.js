@@ -17,11 +17,23 @@ function renderLicenseSection(license) {}
 //`;
 //}
 const generateMarkdown = (object) => {
-  console.log(object.license);
+  console.log(object);
   return `# ${object.title}
 ## ${object.description}
-## Installation Instructions: ${object.install}
-## Usage Instructions: ${object.usage}`;
+## Table of Contents:
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Testing](#tests)
+  - [Questions](#questions)
+  ### Installation: ${object.install} 
+  ### Usage: ${object.usage}
+  ### License
+  ### Contributing: ${object.contrib} 
+  ### Tests: ${object.test}
+  ### Questions: Contact me at: ${object.email} or ${object.github}
+`;
 };
 
 module.exports = generateMarkdown;

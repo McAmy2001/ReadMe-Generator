@@ -1,4 +1,4 @@
 # Portfolio Generator
 ## It's cool
-## Installation Instructions: None
-## Usage Instructions: None
+### Installation Instructions: None
+### Usage Instructions: None
