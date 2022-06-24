@@ -69,7 +69,7 @@ const generateMarkdown = (object) => {
   ### License: This project is licensed under the ${object.license} license. For more information on this license: ${licenseLink}
   ### Contributing: ${object.contrib} 
   ### Tests: ${object.test}
-  ### Questions: Contact me at: [${object.email}](mailto:${object.email}) or [GitHub](github.com/${object.github})
+  ### Questions: Contact me at: [${object.email}](mailto:${object.email}) or [GitHub](https://github.com/${object.github}/)
 `;
 };
 
