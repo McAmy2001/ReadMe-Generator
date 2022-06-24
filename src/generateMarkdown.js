@@ -32,7 +32,7 @@ const generateMarkdown = (object) => {
   ### License
   ### Contributing: ${object.contrib} 
   ### Tests: ${object.test}
-  ### Questions: Contact me at: ${object.email} or ${object.github}
+  ### Questions: Contact me at: [${object.email}](mailto:${object.email}) or [GitHub](github.com/${object.github}
 `;
 };
 

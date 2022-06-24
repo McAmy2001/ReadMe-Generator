@@ -1,11 +1,11 @@
+// Packages/links needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./src/generateMarkdown.js');
 
-// TODO: Include packages needed for this application
 
-// TODO: Create an array of questions for user input
-/*const questions = () => {
+// Question array inquirer function for user input
+const questions = () => {
   return inquirer
     .prompt([
       {
@@ -128,12 +128,26 @@ const generateMarkdown = require('./src/generateMarkdown.js');
       },
   ]);
 };
-questions().then(answers => {
+questions()
+.then(answers => {
   const readMeInfo = answers;
-  //console.log(readMeInfo);
-  generateMarkdown(readMeInfo);
-}); */
-const dummyObject = {
+  console.log(readMeInfo);
+  const pageMarkdown = generateMarkdown(readMeInfo);
+  console.log(pageMarkdown);
+  writeToFile('README.md', pageMarkdown);
+
+})
+//.then(fs.writeFile('README.md', pageMarkdown, err => {
+//  if (err) throw err;
+//  console.log('Page generated');
+//})
+//);
+//.then(pageMarkdown => {
+//  return writePage(pageMarkdown);
+//})
+
+
+/*const dummyObject = {
   title: 'Portfolio Generator',
   github: 'McAmy2001',
   email: 'amymccabe2001@gmail.com',
@@ -143,24 +157,35 @@ const dummyObject = {
   contrib: 'None',
   test: 'None',
   license: 'MIT'
-};
+}; */
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeToFile = (fileName, data) => {
+  fs.writeFile(fileName, data, err => {
+    if (err) throw err;
+    console.log('Page generated');
+})
+};
 
-// TODO: Create a function to initialize app
+
 //function init() {
-//  console.log('Hello');
-//}
-
+//  console.log('Hello, welcome to the README generator. All questions are required. Please give as complete information as possible to make a good README.');
+//};
+//
 
 // Function call to initialize app
-//init();
+//const readMeInput = questions();
+//.then(answers => {
+//  const readMeInfo = answers;
+//  //console.log(readMeInfo);
+//  console.log(generateMarkdown(readMeInfo));
+//})
+//.then()
 
 
-const pageMarkdown = generateMarkdown(dummyObject);
+//const pageMarkdown = generateMarkdown(dummyObject);
 
-fs.writeFile('README.md', pageMarkdown, err => {
-  if (err) throw err;
-  console.log('Page generated');
-});
+//fs.writeFile('README.md', pageMarkdown, err => {
+//  if (err) throw err;
+//  console.log('Page generated');
+//});
