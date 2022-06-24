@@ -1,5 +1,6 @@
-# Portfolio Generator
-## This app generates a portfolio page from user input.
+# README generator
+![image]()
+## Generates README files
 ## Table of Contents:
   - [Installation](#installation)
   - [Usage](#usage)
@@ -7,9 +8,9 @@
   - [Contributing](#contributing)
   - [Testing](#tests)
   - [Questions](#questions)
-  ### Installation: Needs to be installed via GitHub to command line. 
-  ### Usage: Use to make a portfolio page
-  ### License
+  ### Installation: Install Node.js 
+  ### Usage: Use the command line
+  ### License: This project is licensed under the No-License license. For more information on this license: 
   ### Contributing: None 
   ### Tests: None
-  ### Questions: Contact me at: [amymccabe2001@yahoo.com](mailto:amymccabe2001@yahoo.com) or [GitHub](github.com/McAmy2001
+  ### Questions: Contact me at: [mcca0168@umn.edu](mailto:mcca0168@umn.edu) or [GitHub](github.com/McAmy2001)
