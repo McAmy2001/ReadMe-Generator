@@ -116,7 +116,7 @@ const questions = () => {
         type: 'list',
         name: 'license',
         message: 'Which license are you using for your project?',
-        choices: ['MIT', 'Apache-2.0', 'GPL', 'BSD-3', 'No-License'],
+        choices: ['MIT', 'Apache-2.0', 'GPL', 'BSD-3', 'No-Licens'],
         validate: licenseInput => {
           if (licenseInput) {
             return true;
@@ -137,27 +137,6 @@ questions()
   writeToFile('README.md', pageMarkdown);
 
 })
-//.then(fs.writeFile('README.md', pageMarkdown, err => {
-//  if (err) throw err;
-//  console.log('Page generated');
-//})
-//);
-//.then(pageMarkdown => {
-//  return writePage(pageMarkdown);
-//})
-
-
-/*const dummyObject = {
-  title: 'Portfolio Generator',
-  github: 'McAmy2001',
-  email: 'amymccabe2001@gmail.com',
-  description: 'It\'s cool',
-  install: 'None',
-  usage: 'None',
-  contrib: 'None',
-  test: 'None',
-  license: 'MIT'
-}; */
 
 // TODO: Create a function to write README file
 const writeToFile = (fileName, data) => {
@@ -167,25 +146,4 @@ const writeToFile = (fileName, data) => {
 })
 };
 
-
-//function init() {
-//  console.log('Hello, welcome to the README generator. All questions are required. Please give as complete information as possible to make a good README.');
-//};
-//
-
-// Function call to initialize app
-//const readMeInput = questions();
-//.then(answers => {
-//  const readMeInfo = answers;
-//  //console.log(readMeInfo);
-//  console.log(generateMarkdown(readMeInfo));
-//})
-//.then()
-
-
-//const pageMarkdown = generateMarkdown(dummyObject);
-
-//fs.writeFile('README.md', pageMarkdown, err => {
-//  if (err) throw err;
-//  console.log('Page generated');
-//});
+//function init() 
