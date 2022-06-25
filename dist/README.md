@@ -1,6 +1,6 @@
-# README Generator
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## Description
+# AMy
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+## Amy
 ## Table of Contents:
 - [Installation](#installation)
 - [Usage](#usage)
@@ -9,14 +9,14 @@
 - [Testing](#tests)
 - [Questions](#questions)
 ## Installation 
-Installation 
+Ay 
 ## Usage 
-Usage
+AMy
 ## License 
-This project is licensed under the MIT license. For more information on this license: https://opensource.org/licenses/MIT
+This project is licensed under the GPL license. For more information on this license: https://opensource.org/licenses/gpl-license
 ## Contributing 
-Contrib 
+Amy 
 ## Tests 
-Testing
+Amy
 ## Questions 
-Contact me at: [mcca0168@umn.edu](mailto:mcca0168@umn.edu) or [GitHub](https://github.com/McAmy2001/)
+Contact me at: [Amy](mailto:Amy) or [GitHub](https://github.com/Amy/)
