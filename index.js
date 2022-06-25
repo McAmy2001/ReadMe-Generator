@@ -136,7 +136,7 @@ questions()
   return generateMarkdown(answers);
 })
 .then(pageMarkdown => {
-  return writeToFile('./dist/README.md', pageMarkdown);
+  return writeToFile('README.md', pageMarkdown);
   })
   .catch(err => {
     console.log(err);
