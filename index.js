@@ -116,7 +116,7 @@ const questions = () => {
         type: 'list',
         name: 'license',
         message: 'Which license are you using for your project?',
-        choices: ['MIT', 'Apache-2.0', 'GPL', 'BSD-3', 'No-Licens'],
+        choices: ['MIT', 'Apache-2.0', 'GPL', 'BSD-3', 'No-License'],
         validate: licenseInput => {
           if (licenseInput) {
             return true;
@@ -134,7 +134,7 @@ questions()
   console.log(readMeInfo);
   const pageMarkdown = generateMarkdown(readMeInfo);
   console.log(pageMarkdown);
-  writeToFile('README.md', pageMarkdown);
+  writeToFile('./dist/README.md', pageMarkdown);
 
 })
 
