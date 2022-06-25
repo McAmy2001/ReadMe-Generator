@@ -64,12 +64,18 @@ ${licenseBadge}
 - [Contributing](#contributing)
 - [Testing](#tests)
 - [Questions](#questions)
-### Installation: ${object.install} 
-### Usage: ${object.usage}
-### License: This project is licensed under the ${object.license} license. For more information on this license: ${licenseLink}
-### Contributing: ${object.contrib} 
-### Tests: ${object.test}
-### Questions: Contact me at: [${object.email}](mailto:${object.email}) or [GitHub](https://github.com/${object.github}/)
+## Installation 
+${object.install} 
+## Usage 
+${object.usage}
+## License 
+This project is licensed under the ${object.license} license. For more information on this license: ${licenseLink}
+## Contributing 
+${object.contrib} 
+## Tests 
+${object.test}
+## Questions 
+Contact me at: [${object.email}](mailto:${object.email}) or [GitHub](https://github.com/${object.github}/)
 `;
 };
 
