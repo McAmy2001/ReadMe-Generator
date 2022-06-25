@@ -5,7 +5,7 @@ const renderLicenseBadge = (license) => {
     return '';
   } 
   if (license === 'MIT') {
-    return 'https://img.shields.io/badge/license-MIT-blue';
+    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
   }
   if (license === 'Apache-2.0') {
     return 'https://img.shields.io/badge/license-apache%202.0-blue'
@@ -55,21 +55,21 @@ const generateMarkdown = (object) => {
   const licenseBadge = renderLicenseBadge(object.license);
   const licenseLink = renderLicenseLink(object.license);
   return `# ${object.title}
-![image](${licenseBadge})
+${licenseBadge}
 ## ${object.description}
 ## Table of Contents:
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Testing](#tests)
-  - [Questions](#questions)
-  ### Installation: ${object.install} 
-  ### Usage: ${object.usage}
-  ### License: This project is licensed under the ${object.license} license. For more information on this license: ${licenseLink}
-  ### Contributing: ${object.contrib} 
-  ### Tests: ${object.test}
-  ### Questions: Contact me at: [${object.email}](mailto:${object.email}) or [GitHub](https://github.com/${object.github}/)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Testing](#tests)
+- [Questions](#questions)
+### Installation: ${object.install} 
+### Usage: ${object.usage}
+### License: This project is licensed under the ${object.license} license. For more information on this license: ${licenseLink}
+### Contributing: ${object.contrib} 
+### Tests: ${object.test}
+### Questions: Contact me at: [${object.email}](mailto:${object.email}) or [GitHub](https://github.com/${object.github}/)
 `;
 };
 
