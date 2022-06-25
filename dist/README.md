@@ -1,6 +1,6 @@
-# AMy
+# README Generator
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-## Amy
+## Description
 ## Table of Contents:
 - [Installation](#installation)
 - [Usage](#usage)
@@ -9,14 +9,16 @@
 - [Testing](#tests)
 - [Questions](#questions)
 ## Installation 
-Ay 
+Installation 
 ## Usage 
-AMy
+Usage
 ## License 
-This project is licensed under the GPL license. For more information on this license: https://opensource.org/licenses/gpl-license
+&copy; 2022 by Amy McCabe. 
+This project is licensed under the GPL license.
+https://opensource.org/licenses/gpl-license  
 ## Contributing 
-Amy 
+Contrib 
 ## Tests 
-Amy
+Test
 ## Questions 
-Contact me at: [Amy](mailto:Amy) or [GitHub](https://github.com/Amy/)
+Contact me at: [mcca0168@umn.edu](mailto:mcca0168@umn.edu) or [GitHub](https://github.com/McAmy2001/)

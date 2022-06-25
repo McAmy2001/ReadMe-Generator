@@ -12,6 +12,19 @@ const questions = () => {
     .prompt([
       {
         type: 'input',
+        name: 'name',
+        message: 'What is your name?',
+        validate: nameInput => {
+          if (nameInput) {
+            return true;
+          } else {
+            console.log('Please enter your name.');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
         name: 'title',
         message: 'What is the title of your project?',
         validate: titleInput => {
@@ -127,36 +140,19 @@ const questions = () => {
             return false;
           }
         }
-      },
-  ]);
-};
+      }
+    ])
+  };
+
 
 questions()
 .then(answers => {
   return generateMarkdown(answers);
 })
 .then(pageMarkdown => {
-  return writeToFile('README.md', pageMarkdown);
+  return writeToFile('./dist/README.md', pageMarkdown);
   })
   .catch(err => {
     console.log(err);
   });
-
-
-
-
-// TODO: Create a function to write README file
-//const writeToFile = (fileName, data) => {
-//  return new Promise((resolve, reject) => {
-//  fs.writeFile(fileName, data, err => {
-//    if (err) {
-//      reject(err);
-//      return;
-//    }
-//    else {
-//      console.log('Page generated');
-//    };
-//  });
-//  });
-//};
 

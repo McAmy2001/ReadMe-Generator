@@ -42,18 +42,21 @@ const renderLicenseLink = (license) => {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+const renderLicenseSection = (license) => {
+  if (license === 'No-License') {
+    return '';
+  } else {
+    return "This project is licensed under the " + license + " license.";
+  }
+};
 
 // TODO: Create a function to generate markdown for README
-//function generateMarkdown(data) {
-//  return `# ${data.title}
-//
-//`;
-//}
 const generateMarkdown = (object) => {
   console.log(object.license);
   const licenseBadge = renderLicenseBadge(object.license);
   const licenseLink = renderLicenseLink(object.license);
+  const licenseSection = renderLicenseSection(object.license);
+  const currentYear = new Date().getFullYear();
   return `# ${object.title}
 ${licenseBadge}
 ## ${object.description}
@@ -69,7 +72,9 @@ ${object.install}
 ## Usage 
 ${object.usage}
 ## License 
-This project is licensed under the ${object.license} license. For more information on this license: ${licenseLink}
+&copy; ${currentYear} by ${object.name}. 
+${licenseSection}
+${licenseLink}  
 ## Contributing 
 ${object.contrib} 
 ## Tests 
