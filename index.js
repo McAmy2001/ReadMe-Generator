@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./src/generateMarkdown.js');
+const { rejects } = require('assert');
 
 
 // Question array inquirer function for user input
@@ -129,21 +130,38 @@ const questions = () => {
   ]);
 };
 questions()
+//.then(answers => {
+//  const readMeInfo = answers
 .then(answers => {
-  const readMeInfo = answers;
-  console.log(readMeInfo);
-  const pageMarkdown = generateMarkdown(readMeInfo);
-  console.log(pageMarkdown);
-  writeToFile('./dist/README.md', pageMarkdown);
-
+  return generateMarkdown(answers);
 })
+  //console.log(readMeInfo);
+  //const pageMarkdown = generateMarkdown(readMeInfo);
+  //console.log(pageMarkdown);
+.then(pageMarkdown => {
+  return writeToFile('./dist/README.md', pageMarkdown);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+
+
+
 
 // TODO: Create a function to write README file
 const writeToFile = (fileName, data) => {
+  return new Promise((resolve, reject) => {
   fs.writeFile(fileName, data, err => {
-    if (err) throw err;
-    console.log('Page generated');
-})
+    if (err) {
+      reject(err);
+      return;
+    }
+    resolve({
+      ok: true,
+      message: 'Page generated'
+    });
+  });
+  });
 };
 
 //function init() 
