@@ -12,7 +12,11 @@ Watch a demonstration [here](https://drive.google.com/file/d/1Jiq7k6JrCCQFMaDXux
 ## Installation 
 Step One: Clone this repo onto your local machine. Step Two: Install Node.js: [Installation Guide](https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs). Step Three: Navigate to the project's root on the command line, then install npm (Node Package Manager) using the command `npm install` (this will install the required dependencies listed in the package.json from the repo). 
 ## Usage 
-On the command line type `node index`. This will prompt a series of questions. All questions require an answer. The more complete the information you enter the better the README will be. After the last question there will be a console.log of "Page Generated". The new README will be in the 'dist' folder of the repo.
+On the command line type `node index`. This will prompt a series of questions. All questions require an answer. The more complete the information you enter the better the README will be. After the last question there will be a console.log of "Page Generated". The new README will be in the 'dist' folder of the repo. 
+![Screenshot1](./src/images/command-line%20Medium.jpeg)
+![Screenshot2](./src/images/inquirer-questions%20Medium.jpeg)
+![Screenshot3](./src/images/distfolder%20Medium.jpeg)
+![Screenshot4](./src/images/readmeimg%20Medium.jpeg)
 ## License 
 &copy; 2022 by Amy McCabe.
 This project is licensed under the MIT license. 
