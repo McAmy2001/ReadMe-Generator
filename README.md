@@ -1,6 +1,6 @@
-# README Generator
+# Bootcamp Module 9: Node.js, Challenge: README Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## This program generates a README with input the user types into the command line inquirer questions.
+## This program generates a README with input the user types into the command line inquirer questions. This project uses starter code from bootcamp.
 Watch a demonstration [here](https://drive.google.com/file/d/1Jiq7k6JrCCQFMaDXuxhjtEp9MU9Yw9VA/view?usp=sharing).
 ## Table of Contents:
 - [Installation](#installation)
