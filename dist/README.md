@@ -1,6 +1,6 @@
-# README Generator
+# Social-Media-API
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## Description
+## A social media site API back end
 ## Table of Contents:
 - [Installation](#installation)
 - [Usage](#usage)
@@ -9,7 +9,7 @@
 - [Testing](#tests)
 - [Questions](#questions)
 ## Installation 
-Installation 
+Install 
 ## Usage 
 Usage
 ## License 
