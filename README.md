@@ -1,10 +1,11 @@
-# Bootcamp Module 9: Node.js, Challenge: README Generator
+# README Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## This program generates a README with input the user types into the command line inquirer questions. This project uses starter code from bootcamp.
 Watch a demonstration [here](https://drive.google.com/file/d/1Csi03ExciNt3vwNWMh4i3b3xQalqOzpY/view?usp=sharing).
 ## Table of Contents:
 - [Installation](#installation)
 - [Usage](#usage)
+- [Technologies](#technologies)
 - [License](#license)
 - [Contributing](#contributing)
 - [Testing](#tests)
@@ -17,6 +18,9 @@ On the command line type `node index`. This will prompt a series of questions. A
 ![Screenshot2](./src/images/inquirer-questions%20Medium.jpeg)
 ![Screenshot3](./src/images/distfolder%20Medium.jpeg)
 ![Screenshot4](./src/images/readmeimg%20Medium.jpeg)
+## Technologies
+- Javascript
+- [Inquirer](https://www.npmjs.com/package/inquirer)
 ## License 
 &copy; 2022 by Amy McCabe.
 This project is licensed under the MIT license. 
